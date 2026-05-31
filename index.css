@@ -413,46 +413,10 @@ section {
     animation: fadeInRight 0.8s ease-out;
 }
 
-.form-card {
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: var(--border-radius-md);
-    padding: 30px;
-    box-shadow: var(--shadow-lg);
-    position: relative;
-}
 
-/* Beautiful Border Glow Effect for High-converting Look */
-.form-card::after {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: linear-gradient(135deg, var(--accent-gold), var(--accent-blue), transparent);
-    border-radius: calc(var(--border-radius-md) + 2px);
-    z-index: -1;
-    opacity: 0.7;
-}
-
-.form-header {
-    text-align: center;
-    margin-bottom: 24px;
-}
-
-.form-header h3 {
-    font-size: 1.45rem;
-    color: var(--bg-white);
-    margin-bottom: 6px;
-    font-weight: 700;
-}
-
-.form-header p {
-    font-size: 0.88rem;
-    color: rgba(248, 250, 252, 0.7);
+/* CRM Form Wrapper */
+.hero-form-wrapper {
+    animation: fadeInRight 0.8s ease-out;
 }
 
 .form-fallback-loader {
@@ -461,7 +425,7 @@ section {
     align-items: center;
     justify-content: center;
     padding: 40px 0;
-    color: var(--text-light);
+    color: #ffffff;
 }
 
 .spinner {
@@ -472,94 +436,6 @@ section {
     border-radius: 50%;
     animation: spin 1s infinite linear;
     margin-bottom: 16px;
-}
-
-/* Custom styles targeting injected CRM form inputs (to make it merge with modern look) */
-#ee-form-1 form,
-#ee-form-1 div {
-    color: var(--text-light) !important;
-}
-
-#ee-form-1 input[type="text"],
-#ee-form-1 input[type="email"],
-#ee-form-1 input[type="tel"],
-#ee-form-1 select,
-#ee-form-1 textarea {
-    width: 100% !important;
-    background: rgba(255, 255, 255, 0.08) !important;
-    border: 1px solid rgba(255, 255, 255, 0.15) !important;
-    color: #ffffff !important;
-    padding: 10px 14px !important;
-    border-radius: var(--border-radius-sm) !important;
-    margin-bottom: 12px !important;
-    font-family: inherit !important;
-    transition: var(--transition-smooth) !important;
-}
-
-#ee-form-1 input::placeholder {
-    color: rgba(255, 255, 255, 0.5) !important;
-}
-
-#ee-form-1 input:focus,
-#ee-form-1 select:focus {
-    outline: none !important;
-    border-color: var(--accent-gold) !important;
-    background: rgba(255, 255, 255, 0.12) !important;
-    box-shadow: 0 0 8px rgba(241, 196, 15, 0.3) !important;
-}
-
-#ee-form-1 button,
-#ee-form-1 input[type="submit"] {
-    width: 100% !important;
-    background: var(--accent-gold) !important;
-    color: var(--primary-navy) !important;
-    font-weight: 700 !important;
-    padding: 12px !important;
-    border-radius: var(--border-radius-sm) !important;
-    border: none !important;
-    cursor: pointer !important;
-    font-family: 'Outfit', sans-serif !important;
-    transition: var(--transition-smooth) !important;
-    margin-top: 8px !important;
-}
-
-#ee-form-1 button:hover,
-#ee-form-1 input[type="submit"]:hover {
-    background: var(--accent-gold-dark) !important;
-    transform: translateY(-1px) !important;
-}
-
-/* Dropdown Option High Contrast Style */
-#ee-form-1 select option {
-    color: var(--text-dark) !important;
-    background-color: #ffffff !important;
-}
-
-/* Custom Consent Checkbox Styling */
-#custom-consent-container {
-    display: flex !important;
-    align-items: flex-start !important;
-    gap: 10px !important;
-    margin: 15px 0 5px 0 !important;
-    padding: 0 4px !important;
-    text-align: left !important;
-}
-
-#custom-consent-checkbox {
-    width: 16px !important;
-    height: 16px !important;
-    margin-top: 3px !important;
-    accent-color: var(--accent-gold) !important;
-    cursor: pointer !important;
-    flex-shrink: 0 !important;
-}
-
-#custom-consent-container label {
-    font-size: 0.8rem !important;
-    color: rgba(255, 255, 255, 0.85) !important;
-    line-height: 1.4 !important;
-    cursor: pointer !important;
-    user-select: none !important;
 }
 
 /* 6. QUICK STATS BAR */
