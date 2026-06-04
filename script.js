@@ -19,36 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
     handleScroll(); // Initial check in case of page reload halfway down
 
 
-    // 2. MOBILE MENU DRAWER
-    const menuToggleBtn = document.getElementById('menu-toggle-btn');
-    const menuCloseBtn = document.getElementById('menu-close-btn');
-    const mobileNav = document.getElementById('mobile-nav');
-    const backdrop = document.getElementById('backdrop');
-    const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
-
-    const openMobileMenu = () => {
-        mobileNav.classList.add('open');
-        backdrop.classList.add('open');
-        document.body.style.overflow = 'hidden'; // Disable scroll under drawer
-    };
-
-    const closeMobileMenu = () => {
-        mobileNav.classList.remove('open');
-        backdrop.classList.remove('open');
-        document.body.style.overflow = ''; // Re-enable scroll
-    };
-
-    menuToggleBtn.addEventListener('click', openMobileMenu);
-    menuCloseBtn.addEventListener('click', closeMobileMenu);
-    backdrop.addEventListener('click', closeMobileMenu);
-
-    // Close menu when clicking on mobile navigation links
-    mobileNavItems.forEach(item => {
-        item.addEventListener('click', () => {
-            closeMobileMenu();
-        });
-    });
-
 
     // 3. SMOOTH NAVIGATION WITH NAVBAR OFFSET
     const navLinks = document.querySelectorAll('a[href^="#"]');
