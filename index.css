@@ -251,24 +251,18 @@ section {
 
 .logo {
     display: flex;
-    flex-direction: column;
+    align-items: center;
 }
 
-.logo-bold {
-    font-family: 'Outfit', sans-serif;
-    font-size: 1.6rem;
-    font-weight: 800;
-    color: var(--accent-blue);
-    line-height: 1;
-    letter-spacing: 0.5px;
+.header-logo-img {
+    height: 55px;
+    width: auto;
+    object-fit: contain;
+    transition: var(--transition-smooth);
 }
 
-.logo-sub {
-    font-size: 0.65rem;
-    color: var(--primary-navy);
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
+.navbar.scrolled .header-logo-img {
+    height: 45px;
 }
 
 .nav-links {
@@ -990,19 +984,21 @@ section {
     box-shadow: var(--shadow-md);
 }
 
-.rec-icon {
-    font-size: 2.2rem;
-    color: var(--text-muted);
-    margin-bottom: 8px;
+.recruiter-logo {
+    height: 32px;
+    width: auto;
+    max-width: 80%;
+    object-fit: contain;
+    margin-bottom: 12px;
+    filter: grayscale(100%);
+    opacity: 0.65;
     transition: var(--transition-smooth);
 }
 
-.recruiter-card:hover .rec-icon {
-    color: var(--accent-blue);
-}
-
-.recruiter-card:nth-child(even):hover .rec-icon {
-    color: var(--accent-gold-dark);
+.recruiter-card:hover .recruiter-logo {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 .rec-name {
@@ -1152,22 +1148,14 @@ section {
     margin-bottom: 50px;
 }
 
-.footer-about .footer-logo-bold {
-    font-family: 'Outfit', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 800;
-    color: var(--accent-gold);
-    display: block;
-    line-height: 1;
+.footer-logo-link {
+    display: inline-block;
 }
 
-.footer-about .footer-logo-sub {
-    font-size: 0.7rem;
-    color: var(--text-light);
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    display: block;
+.footer-logo-img {
+    height: 55px;
+    width: auto;
+    object-fit: contain;
     margin-bottom: 20px;
 }
 
