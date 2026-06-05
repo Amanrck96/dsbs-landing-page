@@ -989,7 +989,6 @@ section {
     width: auto;
     max-width: 80%;
     object-fit: contain;
-    margin-bottom: 12px;
     filter: grayscale(100%);
     opacity: 0.65;
     transition: var(--transition-smooth);
@@ -999,16 +998,6 @@ section {
     filter: grayscale(0%);
     opacity: 1;
     transform: scale(1.05);
-}
-
-.rec-name {
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--text-muted);
-}
-
-.recruiter-card:hover .rec-name {
-    color: var(--primary-navy);
 }
 
 /* 12. FAQ SECTION */
