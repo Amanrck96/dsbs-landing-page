@@ -999,7 +999,8 @@ section {
 }
 
 .recruiter-logo.flipkart-logo {
-    max-width: 90%;
+    max-width: 95%;
+    height: 36px;
 }
 
 .recruiter-card:hover .recruiter-logo {
