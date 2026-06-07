@@ -1000,17 +1000,12 @@ section {
 
 .recruiter-logo.flipkart-logo {
     max-width: 90%;
-    transform: scale(2.1);
 }
 
 .recruiter-card:hover .recruiter-logo {
     filter: grayscale(0%);
     opacity: 1;
     transform: scale(1.05);
-}
-
-.recruiter-card:hover .recruiter-logo.flipkart-logo {
-    transform: scale(2.15);
 }
 
 /* 12. FAQ SECTION */
